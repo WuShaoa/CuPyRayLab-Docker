@@ -1,0 +1,6 @@
+*.jpg
+*.png
+*.img
+*.gz
+/hf_cache/*
+/workspace/*
