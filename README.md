@@ -19,7 +19,7 @@ docker build -f ./Dockerfile -t cupyraylab:v1 .
 使用以下命令运行Docker容器：
 
 ```bash
-docker run -it --shm-size=1.10gb -p 6379:6379 -p 8265:8265 -p 8080:8080 -p 8888:8888 -v D:\dev\raydocker\workspace:/workspace -v D:\dev\raydocker\hf_cache:/hf_cache cupyraylab:v1 /bin/bash
+docker run -it --name cupyraylab --shm-size=1.10gb -p 6379:6379 -p 8265:8265 -p 8080:8080 -p 8888:8888 -v D:\dev\raydocker\workspace:/workspace -v D:\dev\raydocker\hf_cache:/hf_cache cupyraylab:v1 /bin/bash
 ```
 
 ### 启动Jupyter Lab
